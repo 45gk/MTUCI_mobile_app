@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MTUCI_mobile_app" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.MTUCI_mobile_app" parent="Base.Theme.MTUCI_mobile_app" />
+
+    <style name="DarkTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Добавьте атрибуты темы для темной темы -->
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryDark">#303030</item>
+        <!-- Другие атрибуты темы -->
+    </style>
+</resources>

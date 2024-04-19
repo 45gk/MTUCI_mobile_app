@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">MTUCI_mobile_app</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        ppp
+    </string>
+    <string name="login">
+        Login
+    </string>
+    <string name="logout">
+        Logout
+    </string>
+    <string name="signup">
+        Sign up
+    </string>
+    <string name="changeImage">
+        Change image
+    </string>
+    <string name="createAcc">
+        Create an Account
+    </string>
+    <string name="email">
+        Email address
+    </string>
+    <string name="useImage">
+        Use that Image
+    </string>
+    <string name="password">
+        Password
+    </string>
+    <string name="choosePassword">
+        Choose Password
+    </string>
+    <string name="loginGreet">
+        For free, join now and start learning
+    </string>
+    <string name="forgotPass">
+        Forgot password
+    </string>
+    <string name="googleIn">
+        Login with Google
+    </string>
+    <string name="firstName">
+        First Name
+    </string>
+    <string name="secondName">
+        Second Name
+    </string>
+    <string name="YourFirstName">
+        Your First Name
+    </string>
+    <string name="YourSecondName">
+        Your Second Name
+    </string>
+    <string name="changeTheme">
+        Chenge Theme
+    </string>
+    <string name="languageSelect">
+         Language Select
+    </string>
+    <string name="changePhoto">
+        Chenge Profile Photo
+    </string>
+    <string name="continue1">
+        Continue
+    </string>
+    <string name="guessTheAnimal">
+        Guess The Animal
+    </string>
+    <string name="describeAnimal">
+        Write who is on image
+    </string>
+    <string name="animalRight">
+        Holy Molly! That is Right!
+    </string>
+    <string name="animalInCorrect1">
+        Eh? Wrong answer :(
+    </string>
+    <string name="animalInCorrect2">
+        That is: Racoon
+    </string>
+    <string name="tryAgain">
+        Try again
+    </string>
+    <string name="skipOnboarding">
+        Skip Onboarding
+    </string>
+    <string name="listening">
+        Listening
+    </string>
+    <string name="word_practice">
+        Word practice
+    </string>
+    <string name="whoIsOnImage">
+        Write who is on image
+    </string>
+    <string name="kazakh">Kazakh</string>
+    <string name="belarus">Belarus</string>
+    <string name="chinese">Chinese</string>
+    <string name="english">English</string>
+    <string name="russian">Russian</string>
+    <string name="whats_your_language">Whats your language</string>
+    <string name="signUp">Signup</string>
+    <string name="confirmPassword">Confirm password</string>
+    <string name="profile">Profile</string>
+    <string name="topUsers">Top users</string>
+    <string name="ex">Available excersises</string>
+
+</resources>

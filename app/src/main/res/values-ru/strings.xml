@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MTUCI_mobile_app</string>
+    <string name="action_settings">Настройки</string>
+    <string name="first_fragment_label">Первый фрагмент</string>
+    <string name="second_fragment_label">Второй фрагмент</string>
+    <string name="next">Далее</string>
+    <string name="previous">Назад</string>
+    <string name="lorem_ipsum">ппп</string>
+    <string name="login">Войти</string>
+    <string name="logout">Выйти</string>
+
+    <string name="signup">Зарегестрироваться</string>
+    <string name="changeImage">Сменить изображение</string>
+    <string name="createAcc">Создать аккаунт</string>
+    <string name="email">Эмеил</string>
+    <string name="useImage">Использовать изображение</string>
+    <string name="password">Пароль</string>
+    <string name="choosePassword">Создайте пароль</string>
+    <string name="loginGreet">Бесплатно! Просто присоединитесь и начните учиться!</string>
+    <string name="forgotPass">Забыли пароль</string>
+    <string name="googleIn">Google</string>
+    <string name="continue1">Далее</string>
+</resources>

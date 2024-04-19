@@ -1,0 +1,54 @@
+package com.example.mtuci_mobile_app
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import com.example.mtuci_mobile_app.databinding.MainProfileBinding
+import com.example.mtuci_mobile_app.MainActivity
+/**
+ * A simple [Fragment] subclass as the default destination in the navigation.
+ */
+class MainProfile : Fragment() {
+
+    private var _binding: MainProfileBinding? = null
+
+    // This property is only valid between onCreateView and
+    // onDestroyView.
+    private val binding get() = _binding!!
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+
+        _binding = MainProfileBinding.inflate(inflater, container, false)
+        return binding.root
+
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+//        binding.themeButton.setOnClickListener() {
+//
+//            MainActivity.setAppTheme()
+//        }
+        binding.changeLangButton.setOnClickListener() {
+            findNavController().navigate(R.id.action_mainProfile2_to_chooseLanguage)
+        }
+        binding.logoutProfile.setOnClickListener() {
+            findNavController().navigate(R.id.action_mainProfile2_to_login)
+        }
+//        binding.buttonProfile.setOnClickListener{
+//            findNavController().navigate(R.id.action_profile2_to_mainProfile)
+//        }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+}

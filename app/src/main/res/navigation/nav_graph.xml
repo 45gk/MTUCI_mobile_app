@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.mtuci_mobile_app.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+        <action
+            android:id="@+id/action_FirstFragment_to_onboarding_1"
+            app:destination="@id/onboarding_1" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile2"
+        android:name="com.example.mtuci_mobile_app.Profile"
+        android:label="Profile">
+        <action
+            android:id="@+id/action_profile2_to_mainProfile2"
+            app:destination="@id/mainProfile2" />
+        <action
+            android:id="@+id/action_profile2_to_guessTheAnimal"
+            app:destination="@id/guessTheAnimal" />
+        <action
+            android:id="@+id/action_profile2_to_wordPractice"
+            app:destination="@id/wordPractice" />
+        <action
+            android:id="@+id/action_profile2_to_listening"
+            app:destination="@id/listening" />
+        <action
+            android:id="@+id/action_profile2_to_widget"
+            app:destination="@id/widget" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFirst"
+        android:name="com.example.mtuci_mobile_app.SignInFirst"
+        android:label="SignInFirst" >
+        <action
+            android:id="@+id/action_signInFirst_to_signInSecond"
+            app:destination="@id/signInSecond" />
+        <action
+            android:id="@+id/action_signInFirst_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInSecond"
+        android:name="com.example.mtuci_mobile_app.SignInSecond"
+        android:label="SignInSecond" >
+        <action
+            android:id="@+id/action_signInSecond_to_signInFirst"
+            app:destination="@id/signInFirst" />
+        <action
+            android:id="@+id/action_signInSecond_to_profile2"
+            app:destination="@id/profile2" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainProfile2"
+        android:name="com.example.mtuci_mobile_app.MainProfile"
+        android:label="MainProfile" >
+        <action
+            android:id="@+id/action_mainProfile2_to_profile2"
+            app:destination="@id/profile2" />
+        <action
+            android:id="@+id/action_mainProfile2_to_chooseLanguage"
+            app:destination="@id/chooseLanguage" />
+        <action
+            android:id="@+id/action_mainProfile2_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/guessTheAnimal"
+        android:name="com.example.mtuci_mobile_app.GuessTheAnimal"
+        android:label="GuessTheAnimal" >
+        <action
+            android:id="@+id/action_guessTheAnimal_to_guessTheAnimalIncorrect"
+            app:destination="@id/guessTheAnimalIncorrect" />
+        <action
+            android:id="@+id/action_guessTheAnimal_to_guessTheAnimalRight"
+            app:destination="@id/guessTheAnimalRight" />
+        <action
+            android:id="@+id/action_guessTheAnimal_to_profile2"
+            app:destination="@id/profile2" />
+    </fragment>
+    <fragment
+        android:id="@+id/guessTheAnimalIncorrect"
+        android:name="com.example.mtuci_mobile_app.GuessTheAnimalIncorrect"
+        android:label="GuessTheAnimalIncorrect" >
+        <action
+            android:id="@+id/action_guessTheAnimalIncorrect_to_guessTheAnimal"
+            app:destination="@id/guessTheAnimal" />
+    </fragment>
+    <fragment
+        android:id="@+id/guessTheAnimalRight"
+        android:name="com.example.mtuci_mobile_app.GuessTheAnimalRight"
+        android:label="GuessTheAnimalRight" >
+        <action
+            android:id="@+id/action_guessTheAnimalRight_to_guessTheAnimal"
+            app:destination="@id/guessTheAnimal" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordPractice"
+        android:name="com.example.mtuci_mobile_app.WordPractice"
+        android:label="WordPractice" >
+        <action
+            android:id="@+id/action_wordPractice_to_wordPracticeIncorrect"
+            app:destination="@id/wordPracticeIncorrect" />
+        <action
+            android:id="@+id/action_wordPractice_to_wordPracticeRight"
+            app:destination="@id/wordPracticeRight" />
+        <action
+            android:id="@+id/action_wordPractice_to_profile2"
+            app:destination="@id/profile2" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordPracticeIncorrect"
+        android:name="com.example.mtuci_mobile_app.WordPracticeIncorrect"
+        android:label="WordPracticeIncorrect" >
+        <action
+            android:id="@+id/action_wordPracticeIncorrect_to_wordPractice"
+            app:destination="@id/wordPractice" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordPracticeRight"
+        android:name="com.example.mtuci_mobile_app.WordPracticeRight"
+        android:label="WordPracticeRight" >
+        <action
+            android:id="@+id/action_wordPracticeRight_to_wordPractice"
+            app:destination="@id/wordPractice" />
+    </fragment>
+    <fragment
+        android:id="@+id/listening"
+        android:name="com.example.mtuci_mobile_app.Listening"
+        android:label="Listening" >
+        <action
+            android:id="@+id/action_listening_to_listeningInCorrect"
+            app:destination="@id/listeningInCorrect" />
+        <action
+            android:id="@+id/action_listening_to_listeningCorrect"
+            app:destination="@id/listeningCorrect" />
+        <action
+            android:id="@+id/action_listening_to_profile2"
+            app:destination="@id/profile2" />
+    </fragment>
+    <fragment
+        android:id="@+id/listeningCorrect"
+        android:name="com.example.mtuci_mobile_app.ListeningCorrect"
+        android:label="ListeningCorrect" >
+        <action
+            android:id="@+id/action_listeningCorrect_to_listening"
+            app:destination="@id/listening" />
+    </fragment>
+    <fragment
+        android:id="@+id/listeningInCorrect"
+        android:name="com.example.mtuci_mobile_app.ListeningInCorrect"
+        android:label="ListeningInCorrect" >
+        <action
+            android:id="@+id/action_listeningInCorrect_to_listening"
+            app:destination="@id/listening" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseLanguage"
+        android:name="com.example.mtuci_mobile_app.ChooseLanguage"
+        android:label="ChooseLanguage" >
+        <action
+            android:id="@+id/action_chooseLanguage_to_mainProfile2"
+            app:destination="@id/mainProfile2" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboarding_1"
+        android:name="com.example.mtuci_mobile_app.Onboarding_1"
+        android:label="onbording_1"
+        tools:layout="@layout/onbording_1" >
+        <action
+            android:id="@+id/action_onboarding_1_to_onBoarding_2"
+            app:destination="@id/onBoarding_2" />
+        <action
+            android:id="@+id/action_onboarding_1_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoarding_2"
+        android:name="com.example.mtuci_mobile_app.OnBoarding_2"
+        android:label="OnBoarding_2" >
+        <action
+            android:id="@+id/action_onBoarding_2_to_onBoarding_3"
+            app:destination="@id/onBoarding_3" />
+        <action
+            android:id="@+id/action_onBoarding_2_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoarding_3"
+        android:name="com.example.mtuci_mobile_app.OnBoarding_3"
+        android:label="onboarding_3"
+        tools:layout="@layout/onboarding_3" >
+        <action
+            android:id="@+id/action_onBoarding_3_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_onBoarding_3_to_login2"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/widget"
+        android:name="com.example.mtuci_mobile_app.Widget"
+        android:label="Widget" >
+        <action
+            android:id="@+id/action_widget_to_profile2"
+            app:destination="@id/profile2" />
+    </fragment>
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.mtuci_mobile_app.Login"
+        android:label="Login" >
+        <action
+            android:id="@+id/action_login_to_signInFirst"
+            app:destination="@id/signInFirst" />
+        <action
+            android:id="@+id/action_login_to_profile2"
+            app:destination="@id/profile2" />
+    </fragment>
+</navigation>
